@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thanks for writing — PathJournal Publishing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f6efe1;
+    --ink: #16223d;
+    --ink-2: #4a5170;
+    --plum: #7a4d6e;
+    --cream: #fbf5e7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 19px; line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: flex; flex-direction: column;
+  }
+  h1 { font-family: "Cormorant Garamond", serif; font-weight: 700; line-height: 1.06; margin: 0; }
+  a { color: inherit; }
+
+  .nav { background: var(--paper); border-bottom: 1px solid var(--ink); }
+  .nav-row { max-width: 1140px; margin: 0 auto; padding: 14px 32px; display: flex; align-items: center; gap: 32px; }
+  .brand { display: flex; align-items: center; text-decoration: none; color: var(--ink); }
+  .brand-logo { height: 60px; width: auto; display: block; }
+  .nav-links { display: flex; gap: 28px; margin-left: auto; font-family: "Inter", sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
+  .nav-links a { text-decoration: none; }
+  .nav-links a:hover { color: var(--plum); }
+
+  main {
+    flex: 1;
+    padding: 96px 28px;
+    display: grid; place-items: center;
+    background:
+      radial-gradient(ellipse at 80% 20%, rgba(122,77,110,.08), transparent 55%),
+      var(--paper);
+  }
+  .panel {
+    max-width: 680px; width: 100%;
+    background: var(--cream);
+    border: 1px solid var(--ink);
+    padding: 64px 56px;
+    text-align: center;
+    position: relative;
+    box-shadow: 8px 8px 0 var(--ink);
+  }
+  .panel::after {
+    content: ""; position: absolute; inset: 10px;
+    border: 1px solid var(--ink); opacity: .22; pointer-events: none;
+  }
+  .stamp {
+    display: inline-block;
+    background: var(--plum); color: var(--cream);
+    font-family: "Inter", sans-serif; font-weight: 700; font-size: 11px;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    padding: 8px 18px;
+    border: 1.5px solid var(--ink);
+    margin-bottom: 26px;
+  }
+  .panel-logo {
+    width: 100%; max-width: 220px; height: auto; display: block;
+    margin: 0 auto 22px;
+  }
+  .panel h1 {
+    font-size: clamp(40px, 5vw, 64px);
+    margin-bottom: 18px;
+  }
+  .panel h1 em { color: var(--plum); font-style: italic; }
+  .panel p {
+    font-size: 19px; color: var(--ink-2);
+    max-width: 460px; margin: 0 auto 32px;
+    font-style: italic;
+  }
+  .ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn {
+    padding: 14px 24px; font: inherit; font-weight: 700; font-size: 14px;
+    font-family: "Inter", sans-serif; letter-spacing: 0.18em; text-transform: uppercase;
+    cursor: pointer;
+    border: 1.5px solid var(--ink); background: var(--cream); color: var(--ink);
+    text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn:hover { background: var(--ink); color: var(--cream); }
+  .btn.solid { background: var(--ink); color: var(--cream); }
+  .btn.solid:hover { background: var(--plum); border-color: var(--plum); }
+
+  footer {
+    background: var(--ink); color: var(--paper);
+    padding: 36px 28px;
+    border-top: 4px solid var(--plum);
+    text-align: center;
+  }
+  footer .row {
+    max-width: 1140px; margin: 0 auto; font-size: 13px;
+    font-family: "Inter", sans-serif; letter-spacing: 0.12em; text-transform: uppercase;
+    color: rgba(246,239,225,.55);
+  }
+  footer a { color: #d4a73c; text-decoration: none; }
+
+  @media (max-width: 720px) {
+    .nav-links { display: none; }
+    .panel { padding: 44px 28px; }
+    .brand-logo { height: 50px; }
+    .panel-logo { max-width: 180px; }
+    main { padding: 56px 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-row">
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="PathJournal Publishing" class="brand-logo">
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#mission">Our work</a>
+      <a href="index.html#series">Hand of God</a>
+      <a href="index.html#activity">Things to Do</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="panel">
+    <span class="stamp">Message Received</span>
+    <img class="panel-logo" src="logo.png" alt="PathJournal Publishing">
+    <h1>Thanks for <em>writing</em>.</h1>
+    <p>Your note is in our inbox. We'll get back to you within a few days. In the meantime, here are the books that brought you here.</p>
+    <div class="ctas">
+      <a href="index.html#series" class="btn solid">Browse the series</a>
+      <a href="index.html" class="btn">Back to home</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="row">© 2026 PathJournal Publishing · An imprint of <a href="https://pagepathpublishinggroup.com/">Page &amp; Path Publishing Group</a></div>
+</footer>
+
+</body>
+</html>
